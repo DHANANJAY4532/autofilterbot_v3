@@ -1,17 +1,13 @@
 class script(object):
     START_TXT = """👋 𝙷𝙴𝙻𝙾 {},
-𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>,\n 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽..\n എന്നെ എല്ലാ ഗ്രുപ്പിലും add ചെയ്യാം ഞാൻ എല്ലാ ഗ്രൂപ്പിലും മൂവി തരും WITHOUT FORCE SUBSCRIB """
+𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>,\n 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂"""
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙷𝙴𝙻𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
-    ABOUT_TXT = """<b>✯ 𝙼𝚈 𝙽𝙰𝙼𝙴 : {}
-<b>✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁 : <a href=https://t.me/mr_MKN>𝙼𝚛.𝙼𝙺𝙽 𝚃𝙶</a></b>
-<b>✯ 𝙲𝙾𝙳𝙴 𝙳𝙴𝚅 : <a href=https://t.me/Aadhi011>𝙰𝙰𝙳𝙷𝙸</a></b>
-<b>✯ 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 : <a href=https://t.me/mkn_bots_updates>𝙼𝙺𝙽 𝙱𝙾𝚃𝚉</a></b>
-<b>✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈 : 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼</b>
-<b>✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴 : 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹</b>
-<b>✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴 : 𝙼𝙾𝙽𝙶𝙾-𝙳𝙱</b>
-<b>✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁 : 𝚁𝙰𝙸𝙻𝚆𝙰𝚈</b>
-<b>✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂 : 𝚅1.0.43 [𝙼𝙰𝙹𝙾𝚁]</b>"""
+    ABOUT_TXT = """<b>⦿ 𝙼𝚈 𝙽𝙰𝙼𝙴 : {}
+⦿ Creator : @CP_JUPITER 
+⦿ Source Code : [Click here](https://t.me/nokki_irunno_ippo_kittum)
+⦿ REVIEW CHANNEL : [CP REVIEWS](https://t.me/cinemapranthanzz5)
+⦿ MAIN GROUP : [CINEMAPRANTHANZ](https://t.me/cinemapranthanzz1)"""
     SOURCE_TXT = """<b>NOTE:</b>
 - This is a Eva Mari clone Project
 - contact <a href=https://t.me/mr_MKN>𝙼𝚛.𝙼𝙺𝙽 𝚃𝙶</a></b>
