@@ -42,14 +42,13 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, message.from_user.username, temp.U_NAME))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕️ Add Me To Your Group ➕️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-            InlineKeyboardButton('🤠 Dev 🤠', url='https://t.me/P_JUPITER'), 
-            InlineKeyboardButton('📢 UPDATES 📢', url='https://t.me/cinemapranthanzz1')
-            ],[      
-            InlineKeyboardButton('ℹ️ Help ℹ️', callback_data='help'),
-            InlineKeyboardButton('😊 About 😊', callback_data='about')
-        ]]         
+            InlineKeyboardButton('⚜️ 𝕆𝕌ℝ ℂℍ𝔸ℕℕ𝔼𝕃 ⚜️', url='https://t.me/cinemapranthanzz5')
+            ],[                       
+            InlineKeyboardButton('⚡️ 𝕄𝔸𝕀ℕ 𝔾ℝ𝕆𝕌ℙ ⚡️', url='https://t.me/cinemapranthanzz1')
+            ],[ 
+            InlineKeyboardButton('🔰 𝔸𝔹𝕆𝕌𝕋 🔰', callback_data='about'), 
+            InlineKeyboardButton('ℹ️ ℍ𝔼𝕃ℙ ℹ️', callback_data='help')            
+        ]]    
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action("Typing")
         m=await message.reply_sticker("CAACAgUAAxkBAAIFNGJSlfOErbkSeLt9SnOniU-58UUBAAKaAAPIlGQULGXh4VzvJWoeBA") 
