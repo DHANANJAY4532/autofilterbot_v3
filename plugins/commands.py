@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('📢 UPDATES 📢', url='https://t.me/mkn_bots_updates')
+                InlineKeyboardButton('📢 UPDATES 📢', url='https://t.me/cinemapranthanzz1')
             ],
             [
                 InlineKeyboardButton('ℹ️ Help ℹ️', url=f"https://t.me/{temp.U_NAME}?start=help")
@@ -44,8 +44,8 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕️ Add Me To Your Group ➕️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🤠 Dev 🤠', url='https://t.me/mr_MKN'), 
-            InlineKeyboardButton('📢 UPDATES 📢', url='https://t.me/mkn_bots_updates')
+            InlineKeyboardButton('🤠 Dev 🤠', url='https://t.me/'), 
+            InlineKeyboardButton('📢 UPDATES 📢', url='https://t.me/cinemapranthanzz1')
             ],[      
             InlineKeyboardButton('ℹ️ Help ℹ️', callback_data='help'),
             InlineKeyboardButton('😊 About 😊', callback_data='about')
@@ -90,7 +90,7 @@ async def start(client, message):
             InlineKeyboardButton('➕️ Add Me To Your Group ➕️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🤠 Dev 🤠', url='https://t.me/mr_MKN'), 
-            InlineKeyboardButton('📢 UPDATES 📢', url='https://t.me/mkn_bots_updates')
+            InlineKeyboardButton('📢 UPDATES 📢', url='https://t.me/cinemapranthanzz1')
             ],[      
             InlineKeyboardButton('ℹ️ Help ℹ️', callback_data='help'),
             InlineKeyboardButton('😊 About 😊', callback_data='about')
@@ -533,7 +533,7 @@ async def start(client, message):
     if len(message.command) != 2:
         buttons = [[
             InlineKeyboardButton('🤠 Dev 🤠', url='https://t.me/mr_MKN'), 
-            InlineKeyboardButton('📢 UPDATES 📢', url='https://t.me/mkn_bots_updates')
+            InlineKeyboardButton('📢 UPDATES 📢', url='https://t.me/cinemapranthanzz1')
             ],[      
             InlineKeyboardButton('😊 About 😊', callback_data='about')
         ]]         
@@ -575,7 +575,7 @@ async def start(client, message):
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[            
             InlineKeyboardButton('🤠 Dev 🤠', url='https://t.me/mr_MKN'), 
-            InlineKeyboardButton('📢 UPDATES 📢', url='https://t.me/mkn_bots_updates')
+            InlineKeyboardButton('📢 UPDATES 📢', url='https://t.me/cinemapranthanzz1')
             ],[      
             InlineKeyboardButton('😊 About 😊', callback_data='about')
         ]]
