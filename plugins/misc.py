@@ -2,16 +2,26 @@ import os
 from pyrogram import Client, filters
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
 from Script import script
-from info import PICS, ADMINS
-from info import IMDB_TEMPLATE
 from utils import extract_user, get_file_id, get_poster, last_online
 import time
 import random
 from datetime import datetime
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
+import asyncio
+from pyrogram.errors import ChatAdminRequired, FloodWait
+from database.ia_filterdb import Media, get_file_details, unpack_new_file_id
+from database.users_chats_db import db
+from info import CHANNELS, ADMINS, AUTH_CHANNEL, LOG_CHANNEL, PICS, CUSTOM_FILE_CAPTION, BATCH_FILE_CAPTION, PROTECT_CONTENT, IMDB_TEMPLATE
+from utils import get_settings, get_size, is_subscribed, save_group_settings, temp
+from database.connections_mdb import active_connection
+import re
+import json
+import base64
 import logging
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
+
+
 
 @Client.on_message(filters.command('id'))
 async def showid(client, message):
