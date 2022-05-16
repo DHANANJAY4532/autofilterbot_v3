@@ -2,7 +2,7 @@ import os
 from pyrogram import Client, filters
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
 from Script import script
-from info import PICS
+from info import PICS, ADMINS
 from info import IMDB_TEMPLATE
 from utils import extract_user, get_file_id, get_poster, last_online
 import time
@@ -57,7 +57,7 @@ async def showid(client, message):
             quote=True
         )
 
-@Client.on_message(filters.command("about"))
+@Client.on_message(filters.command("about") & filters.user(ADMINS))
 async def aboutme(client, message):
         buttons= [[
             InlineKeyboardButton('📢 UPDATES CHANNEL 📢', url='https://t.me/mkn_bots_updates')
@@ -146,7 +146,7 @@ async def who_is(client, message):
         )
     await status_message.delete()
 
-@Client.on_message(filters.command("help"))
+@Client.on_message(filters.command("help") & filters.user(ADMINS))
 async def help(client, message):
         buttons = [[
             InlineKeyboardButton('𝙼𝙰𝙽𝚄𝙴𝙻 𝙵𝙸𝙻𝚃𝙴𝚁', callback_data='manuelfilter'),
