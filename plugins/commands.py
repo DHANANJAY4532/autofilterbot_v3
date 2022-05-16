@@ -44,7 +44,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕️ Add Me To Your Group ➕️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🤠 Dev 🤠', url='https://t.me/'), 
+            InlineKeyboardButton('🤠 Dev 🤠', url='https://t.me/P_JUPITER'), 
             InlineKeyboardButton('📢 UPDATES 📢', url='https://t.me/cinemapranthanzz1')
             ],[      
             InlineKeyboardButton('ℹ️ Help ℹ️', callback_data='help'),
@@ -89,7 +89,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕️ Add Me To Your Group ➕️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🤠 Dev 🤠', url='https://t.me/mr_MKN'), 
+            InlineKeyboardButton('🤠 Dev 🤠', url='https://t.me/P_JUPITER'), 
             InlineKeyboardButton('📢 UPDATES 📢', url='https://t.me/cinemapranthanzz1')
             ],[      
             InlineKeyboardButton('ℹ️ Help ℹ️', callback_data='help'),
@@ -532,7 +532,7 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, message.from_user.username, temp.U_NAME))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('🤠 Dev 🤠', url='https://t.me/mr_MKN'), 
+            InlineKeyboardButton('🤠 Dev 🤠', url='https://t.me/P_JUPITER'), 
             InlineKeyboardButton('📢 UPDATES 📢', url='https://t.me/cinemapranthanzz1')
             ],[      
             InlineKeyboardButton('😊 About 😊', callback_data='about')
@@ -574,7 +574,7 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[            
-            InlineKeyboardButton('🤠 Dev 🤠', url='https://t.me/mr_MKN'), 
+            InlineKeyboardButton('🤠 Dev 🤠', url='https://t.me/P_JUPITER'), 
             InlineKeyboardButton('📢 UPDATES 📢', url='https://t.me/cinemapranthanzz1')
             ],[      
             InlineKeyboardButton('😊 About 😊', callback_data='about')
