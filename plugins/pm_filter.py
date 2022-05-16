@@ -811,9 +811,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text="⦿⦿⦿⦿⦿⦿⦿"
         )         
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
+        reply_markup=reply_markup,
+        parse_mode='html'        
     elif query.data == "source":
         buttons = [[
             InlineKeyboardButton('👩‍🦯 Back', callback_data='about')
