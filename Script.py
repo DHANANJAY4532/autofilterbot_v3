@@ -3,11 +3,7 @@ class script(object):
 𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>,\n 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂"""
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙷𝙴𝙻𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
-    ABOUT_TXT = """<b>⦿ 𝙼𝚈 𝙽𝙰𝙼𝙴 : {}
-⦿ Creator : @CP_JUPITER 
-⦿ Source Code : <a href=https://t.me/nokki_irunno_ippo_kittum>Click here</a>
-⦿ REVIEW CHANNEL : <a href=https://t.me/cinemapranthanzz5>CP REVIEWS</a>
-⦿ MAIN GROUP : <a href=https://t.me/cinemapranthanzz1>CINEMAPRANTHANZ</a>"""
+    ABOUT_TXT = """👇 About Me 🙏😁"""
     SOURCE_TXT = """<b>NOTE:</b>
 - This is a Eva Mari clone Project
 - contact <a href=https://t.me/mr_MKN>𝙼𝚛.𝙼𝙺𝙽 𝚃𝙶</a></b>
