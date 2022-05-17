@@ -42,7 +42,7 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, message.from_user.username, temp.U_NAME))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⚜️ 𝕆𝕌ℝ ℂℍ𝔸ℕℕ𝔼𝕃 ⚜️', url='https://t.me/cinemapranthanzz5')
+            InlineKeyboardButton('⚜️ ℝ𝔼𝕍𝕀𝔼𝕎𝕊 ℂℍ𝔸ℕℕ𝔼𝕃 ⚜️', url='https://t.me/cinemapranthanzz5')
             ],[                       
             InlineKeyboardButton('⚡️ 𝕄𝔸𝕀ℕ 𝔾ℝ𝕆𝕌ℙ ⚡️', url='https://t.me/cinemapranthanzz1')
             ],[ 
