@@ -310,7 +310,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('📢 UPDATES 📢', url=''https://t.me/Cp_jupiter)
+                InlineKeyboardButton('📢 UPDATES 📢', url='https://t.me/Cp_jupiter')
             ],
             [
                 InlineKeyboardButton('ℹ️ Help ℹ️', url=f"https://t.me/{temp.U_NAME}?start=help")
