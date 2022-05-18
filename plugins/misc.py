@@ -87,10 +87,16 @@ async def showid(client, message):
 @Client.on_message(filters.command("about") & filters.user(ADMINS))
 async def aboutme(client, message):
         buttons= [[
-            InlineKeyboardButton('📢 UPDATES CHANNEL 📢', url='https://t.me/mkn_bots_updates')
+            InlineKeyboardButton('CREATOR', url='https://t.me/CP_JUPITER')
+            ],[ 
+            InlineKeyboardButton('REVIEW CHANNEL', url='https://t.me/cinemapranthanzz5')
+            ],[            
+            InlineKeyboardButton('MAIN GROUP', url='https://t.me/cinemapranthanzz1')
             ],[
-            InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start'),
-            InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 🔐', callback_data='close_data')
+            InlineKeyboardButton('SOURCE CODE', url='https://t.me/nokki_irunno_ippo_kittum')             
+            ],[                            
+            InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 ', callback_data='start'),
+            InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 ', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
