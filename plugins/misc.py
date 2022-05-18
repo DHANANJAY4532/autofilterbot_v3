@@ -84,7 +84,7 @@ async def showid(client, message):
             quote=True
         )
 
-@Client.on_message(filters.command("about") & filters.user(ADMINS))
+@Client.on_message(filters.command("about"))
 async def aboutme(client, message):
         buttons= [[
             InlineKeyboardButton('CREATOR', url='https://t.me/CP_JUPITER')
