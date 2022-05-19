@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('📢 UPDATES 📢', url='https://t.me/cinemapranthanzz1')
+                InlineKeyboardButton('⚜️ 𝕄𝕆𝕍𝕀𝔼 ℝ𝔼ℚ𝕌𝔼𝕊𝕋 𝔾ℝ𝕆𝕌ℙ ⚜️', url='https://t.me/CPMOVIEZZ')
             ],
             [
-                InlineKeyboardButton('ℹ️ Help ℹ️', url=f"https://t.me/{temp.U_NAME}?start=help")
+                InlineKeyboardButton('ℍ𝔼𝕃ℙ', url=f"https://t.me/{temp.U_NAME}?start=help")
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -42,7 +42,7 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, message.from_user.username, temp.U_NAME))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⚜️ ℝ𝔼𝕍𝕀𝔼𝕎𝕊 ℂℍ𝔸ℕℕ𝔼𝕃 ⚜️', url='https://t.me/cinemapranthanzz5')
+            InlineKeyboardButton('⚜️ 𝕄𝕆𝕍𝕀𝔼 ℝ𝔼ℚ𝕌𝔼𝕊𝕋 𝔾ℝ𝕆𝕌ℙ ⚜️', url='https://t.me/CPMOVIEZZ')
             ],[                       
             InlineKeyboardButton('⚡️ 𝕄𝔸𝕀ℕ 𝔾ℝ𝕆𝕌ℙ ⚡️', url='https://t.me/cinemapranthanzz1')
             ],[ 
@@ -70,7 +70,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "📢 Join Update Channel 📢", url=invite_link.invite_link
+                    "⚜️ 𝕄𝕆𝕍𝕀𝔼 ℝ𝔼ℚ𝕌𝔼𝕊𝕋 𝔾ℝ𝕆𝕌ℙ ⚜️", url=invite_link.invite_link
                 )
             ]
         ]
@@ -86,12 +86,12 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('⚜️ 𝕆𝕌ℝ ℂℍ𝔸ℕℕ𝔼𝕃 ⚜️', url='https://t.me/cinemapranthanzz5')
+            InlineKeyboardButton('⚜️ 𝕄𝕆𝕍𝕀𝔼 ℝ𝔼ℚ𝕌𝔼𝕊𝕋 𝔾ℝ𝕆𝕌ℙ ⚜️', url='https://t.me/CPMOVIEZZ')
             ],[                       
             InlineKeyboardButton('⚡️ 𝕄𝔸𝕀ℕ 𝔾ℝ𝕆𝕌ℙ ⚡️', url='https://t.me/cinemapranthanzz1')
             ],[ 
             InlineKeyboardButton('🔰 𝔸𝔹𝕆𝕌𝕋 🔰', callback_data='about'), 
-            InlineKeyboardButton('ℹ️ ℍ𝔼𝕃ℙ ℹ️', callback_data='help')            
+            InlineKeyboardButton('ℍ𝔼𝕃ℙ', callback_data='help')            
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action("Typing")
@@ -112,7 +112,7 @@ async def start(client, message):
         file_id = data
         pre = ""
     if data.split("-", 1)[0] == "BATCH":
-        sts = await message.reply("<b>𝙰𝙲𝙲𝙴𝚂𝚂𝙸𝙽𝙶 𝙵𝙸𝙻𝙴𝚂.../</b>")
+        sts = await message.reply("<b>Processing 😇</b>")
         file_id = data.split("-", 1)[1]
         msgs = BATCH_FILES.get(file_id)
         if not msgs:
@@ -160,7 +160,7 @@ async def start(client, message):
         await sts.delete()
         return
     elif data.split("-", 1)[0] == "DSTORE":
-        sts = await message.reply("<b>𝙰𝙲𝙲𝙴𝚂𝚂𝙸𝙽𝙶 𝙵𝙸𝙻𝙴𝚂.../</b>")
+        sts = await message.reply("<b>Processing 😇</b>")
         b_string = data.split("-", 1)[1]
         decoded = (base64.urlsafe_b64decode(b_string + "=" * (-len(b_string) % 4))).decode("ascii")
         try:
