@@ -47,7 +47,7 @@ async def start(client, message):
             InlineKeyboardButton('⚡️ 𝕄𝔸𝕀ℕ 𝔾ℝ𝕆𝕌ℙ ⚡️', url='https://t.me/cinemapranthanzz1')
             ],[ 
             InlineKeyboardButton('🔰 𝔸𝔹𝕆𝕌𝕋 🔰', callback_data='about'), 
-            InlineKeyboardButton('ℹ️ ℍ𝔼𝕃ℙ ℹ️', callback_data='help')            
+            InlineKeyboardButton('ℍ𝔼𝕃ℙ', callback_data='help')            
         ]]    
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action("Typing")
@@ -79,7 +79,7 @@ async def start(client, message):
             btn.append([InlineKeyboardButton("🔁 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧 🔁", callback_data=f"checksub#{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑴𝒐𝒗𝒊𝒆 𝑼𝒑𝒅𝒂𝒕𝒆𝒔 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 𝑻𝒐 𝑼𝒔𝒆 𝑻𝒉𝒊𝒔 𝑩𝒐𝒕!**",
+            text="**𝑱𝑶𝑰𝑵 𝑶𝑼𝑹 𝑴𝑶𝑽𝑰𝑬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 𝑻𝑶 𝑼𝑺𝑬 𝑻𝑯𝑰𝑺 𝑩𝑶𝑻!**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
