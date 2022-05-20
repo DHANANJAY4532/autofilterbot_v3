@@ -87,13 +87,13 @@ async def showid(client, message):
 @Client.on_message(filters.command("about"))
 async def aboutme(client, message):
         buttons= [[
-            InlineKeyboardButton('CREATOR', url='https://t.me/CP_JUPITER')
+            InlineKeyboardButton('ℂℝ𝔼𝔸𝕋𝕆ℝ', url='https://t.me/CP_JUPITER')
             ],[ 
-            InlineKeyboardButton('REVIEW CHANNEL', url='https://t.me/cinemapranthanzz5')
+            InlineKeyboardButton('𝕄𝕆𝕍𝕀𝔼 ℝ𝔼ℚ𝕌𝔼𝕊𝕋 𝔾ℝ𝕆𝕌ℙ', url='https://t.me/POPCORN_SCOPE_MOVIEZ')
             ],[            
-            InlineKeyboardButton('MAIN GROUP', url='https://t.me/cinemapranthanzz1')
+            InlineKeyboardButton('𝕄𝔸𝕀ℕ 𝔾ℝ𝕆𝕌ℙ', url='https://t.me/POPCORN_SCOPE')
             ],[
-            InlineKeyboardButton('SOURCE CODE', url='https://t.me/nokki_irunno_ippo_kittum')             
+            InlineKeyboardButton('𝕊𝕆𝕌ℝℂ𝔼 ℂ𝕆𝔻𝔼', url='https://t.me/nokki_irunno_ippo_kittum')             
             ],[                            
             InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 ', callback_data='start'),
             InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 ', callback_data='close_data')
@@ -316,10 +316,10 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('📢 UPDATES 📢', url='https://t.me/Cp_jupiter')
+                InlineKeyboardButton('𝕆𝕎ℕ𝔼ℝ', url='https://t.me/Cp_jupiter')
             ],
             [
-                InlineKeyboardButton('ℹ️ Help ℹ️', url=f"https://t.me/{temp.U_NAME}?start=help")
+                InlineKeyboardButton('Help', url=f"https://t.me/{temp.U_NAME}?start=help")
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -335,9 +335,9 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, message.from_user.username, temp.U_NAME))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⚜️ 𝕆𝕌ℝ ℂℍ𝔸ℕℕ𝔼𝕃 ⚜️', url='https://t.me/cinemapranthanzz5')
+            InlineKeyboardButton('⚜️ 𝕄𝕆𝕍𝕀𝔼 ℝ𝔼ℚ𝕌𝔼𝕊𝕋 𝔾ℝ𝕆𝕌ℙ ⚜️', url='https://t.me/POPCORN_SCOPE_MOVIEZ')
             ],[                       
-            InlineKeyboardButton('⚡️ 𝕄𝔸𝕀ℕ 𝔾ℝ𝕆𝕌ℙ ⚡️', url='https://t.me/cinemapranthanzz1')
+            InlineKeyboardButton('⚡️ 𝕄𝔸𝕀ℕ 𝔾ℝ𝕆𝕌ℙ ⚡️', url='https://t.me/POPCORN_SCOPE')
             ],[ 
             InlineKeyboardButton('🔰 𝔸𝔹𝕆𝕌𝕋 🔰', callback_data='about')
         ]] 
@@ -362,7 +362,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "📢 Join Update Channel 📢", url=invite_link.invite_link
+                    "⚜️ 𝕄𝕆𝕍𝕀𝔼 ℝ𝔼ℚ𝕌𝔼𝕊𝕋 𝔾ℝ𝕆𝕌ℙ ⚜️", url=invite_link.invite_link
                 )
             ]
         ]
@@ -378,9 +378,9 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('⚜️ 𝕆𝕌ℝ ℂℍ𝔸ℕℕ𝔼𝕃 ⚜️', url='https://t.me/cinemapranthanzz5')
+            InlineKeyboardButton('⚜️ 𝕄𝕆𝕍𝕀𝔼 ℝ𝔼ℚ𝕌𝔼𝕊𝕋 𝔾ℝ𝕆𝕌ℙ ⚜️', url='https://t.me/POPCORN_SCOPE_MOVIEZ')
             ],[                       
-            InlineKeyboardButton('⚡️ 𝕄𝔸𝕀ℕ 𝔾ℝ𝕆𝕌ℙ ⚡️', url='https://t.me/cinemapranthanzz1')
+            InlineKeyboardButton('⚡️ 𝕄𝔸𝕀ℕ 𝔾ℝ𝕆𝕌ℙ ⚡️', url='https://t.me/POPCORN_SCOPE')
             ],[ 
             InlineKeyboardButton('🔰 𝔸𝔹𝕆𝕌𝕋 🔰', callback_data='about')
         ]]
@@ -403,7 +403,7 @@ async def start(client, message):
         file_id = data
         pre = ""
     if data.split("-", 1)[0] == "BATCH":
-        sts = await message.reply("<b>𝙰𝙲𝙲𝙴𝚂𝚂𝙸𝙽𝙶 𝙵𝙸𝙻𝙴𝚂.../</b>")
+        sts = await message.reply("<b>Processing 😇</b>")
         file_id = data.split("-", 1)[1]
         msgs = BATCH_FILES.get(file_id)
         if not msgs:
@@ -451,7 +451,7 @@ async def start(client, message):
         await sts.delete()
         return
     elif data.split("-", 1)[0] == "DSTORE":
-        sts = await message.reply("<b>𝙰𝙲𝙲𝙴𝚂𝚂𝙸𝙽𝙶 𝙵𝙸𝙻𝙴𝚂.../</b>")
+        sts = await message.reply("<b>Processing 😇</b>")
         b_string = data.split("-", 1)[1]
         decoded = (base64.urlsafe_b64decode(b_string + "=" * (-len(b_string) % 4))).decode("ascii")
         try:
