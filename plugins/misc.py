@@ -87,7 +87,7 @@ async def showid(client, message):
 @Client.on_message(filters.command("about"))
 async def aboutme(client, message):
         buttons= [[
-            InlineKeyboardButton('ℂℝ𝔼𝔸𝕋𝕆ℝ', url='https://t.me/CP_JUPITER')
+            InlineKeyboardButton('ℂℝ𝔼𝔸𝕋𝕆ℝ', url='https://t.me/its_me_jupiter')
             ],[ 
             InlineKeyboardButton('𝕄𝕆𝕍𝕀𝔼 ℝ𝔼ℚ𝕌𝔼𝕊𝕋 𝔾ℝ𝕆𝕌ℙ', url='https://t.me/POPCORN_SCOPE_MOVIEZ')
             ],[            
@@ -316,7 +316,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('𝕆𝕎ℕ𝔼ℝ', url='https://t.me/Cp_jupiter')
+                InlineKeyboardButton('𝕆𝕎ℕ𝔼ℝ', url='https://t.me/its_me_jupiter')
             ],
             [
                 InlineKeyboardButton('Help', url=f"https://t.me/{temp.U_NAME}?start=help")
