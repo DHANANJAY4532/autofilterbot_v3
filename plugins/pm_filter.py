@@ -796,7 +796,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[            
             InlineKeyboardButton('𝕄𝔸𝕀ℕ 𝔾ℝ𝕆𝕌ℙ', url='https://t.me/POPCORN_SCOPE')
             ],[
-            InlineKeyboardButton('𝕊𝕆𝕌ℝℂ𝔼 ℂ𝕆𝔻𝔼', url='https://t.me/nokki_irunno_ippo_kittum')             
+            InlineKeyboardButton('𝕊𝕆𝕌ℝℂ𝔼 ℂ𝕆𝔻𝔼', url='https://github.com/MrMKN/PROFESSOR-BOT')             
             ],[                            
             InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 ', callback_data='start'),
             InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 ', callback_data='close_data')
