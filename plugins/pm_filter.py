@@ -777,7 +777,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         await query.message.edit_text(
             text="███████▒▒▒"
-"
         )
         await query.message.edit_text(
             text="██████████"
