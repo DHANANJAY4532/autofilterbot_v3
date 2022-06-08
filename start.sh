@@ -8,5 +8,5 @@ else
 fi
 cd /PROFESSOR-BOT
 pip3 install -U -r requirements.txt
-echo "Starting 𝙼𝙺𝙽 𝙱𝙾𝚃𝚉....🔥"
+echo "STARTING.......🔥"
 python3 bot.py
