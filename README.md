@@ -82,4 +82,4 @@
 • /broadcast - to broadcast a message to all Eva Maria users
 ```
 BY https://t.me/its_me_jupiter
-🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂
+🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂
