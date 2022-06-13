@@ -3,7 +3,7 @@
   <img src="https://telegra.ph/file/448152d88af41a4ad0bcd.jpg" 
 </p>
 <h1 align="center">
-  <b> 𝙰𝚄𝚃𝙾𝙵𝙸𝙻𝚃𝙴𝚁 𝙱𝙾𝚃 𝚅3</b>
+  <b> AUTOFILTER BOT V3</b>
 </h1>
 
 [![Stars](https://img.shields.io/github/stars/MrMKN/Professor-Bot?style=flat-square&color=yellow)](https://github.com/MrMKN/Professor-Bot/stargazers)
