@@ -1,5 +1,5 @@
 {
-    "name": "PROFESSOR-BOT",
+    "name": "AUTO FILTER BOT V3",
     "description": "This Bot Will Help You To Store Files In Cloud Storage. You Can Add Files To The Bot By Forward the last file from a public channel to your bot and Press Yes Button.. If The Files Channl Is Private Make the bot admin on the channel and forward the last file to bot. Then Add the bot to you group and send the movie name The Bot Will Give the file in Bot PM..✮✮",
     "logo": "https://telegra.ph/file/2e2a07e86066538ed7406.jpg",
     "stack": "container",
@@ -16,8 +16,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/MrMKN/PROFESSOR-BOT",
-    "repository": "https://github.com/MrMKN/PROFESSOR-BOT",
+    "website": "https://github.com/DHANANJAY4532/autofilterbot_v3",
+    "repository": "https://github.com/DHANANJAY4532/autofilterbot_v3",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
