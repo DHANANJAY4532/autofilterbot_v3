@@ -136,18 +136,18 @@ async def next_page(bot, query):
     if n_offset == 0:
         btn.append(
             [InlineKeyboardButton("⬅️ 𝗕𝗮𝗰𝗸", callback_data=f"next_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f"🔰𝗣𝗮𝗴𝗲 {round(int(offset) /𝟭𝟬) + 1} / {round(total /𝟭𝟬)}🔰",
+             InlineKeyboardButton(f"🔰𝗣𝗮𝗴𝗲 {round(int(offset) /10) + 1} / {round(total /𝟭𝟬)}🔰",
                                   callback_data="pages")]
         )
     elif off_set is None:
         btn.append(
-            [InlineKeyboardButton(f"🔰𝗣𝗮𝗴𝗲 {round(int(offset) /𝟭𝟬) + 1} / {round(total /𝟭𝟬)}🔰", callback_data="pages"),
+            [InlineKeyboardButton(f"🔰𝗣𝗮𝗴𝗲 {round(int(offset) /10 + 1} / {round(total /𝟭𝟬)}🔰", callback_data="pages"),
              InlineKeyboardButton("𝗡𝗲𝘅𝘁 ➡️", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
                 InlineKeyboardButton("⬅️ 𝗕𝗮𝗰𝗸", callback_data=f"next_{req}_{key}_{off_set}"),
-                InlineKeyboardButton(f"🔰𝗣𝗮𝗴𝗲 {round(int(offset) /𝟭𝟬) + 1} / {round(total /𝟭𝟬)}🔰", callback_data="pages"),
+                InlineKeyboardButton(f"🔰𝗣𝗮𝗴𝗲 {round(int(offset) /10 + 1} / {round(total /𝟭𝟬)}🔰", callback_data="pages"),
                 InlineKeyboardButton("𝗡𝗲𝘅𝘁 ➡️", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
@@ -1333,7 +1333,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>🎬 Title:</b> {search}\n\n<b>👥 Requested by: {message.from_user.mention}</b>\{message.chat.title}✍️ Note:</b> <s>This message will be Auto-deleted after 5 minutes...</s>"
+        cap = f"<b>🎬 Title:</b> {search}\n\n<b>👥 Requested by: {message.from_user.mention}</b>\{message.chat.title}🔴 Note:</b> <s>This message will be Auto-deleted after 5 minutes...</s>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
