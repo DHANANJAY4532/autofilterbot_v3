@@ -136,18 +136,18 @@ async def next_page(bot, query):
     if n_offset == 0:
         btn.append(
             [InlineKeyboardButton("⬅️ 𝗕𝗮𝗰𝗸", callback_data=f"next_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f"🔰𝗣𝗮𝗴𝗲 {round(int(offset) / 10) + 1} / {round(total / 10)}🔰",
+             InlineKeyboardButton(f"🔰𝗣𝗮𝗴𝗲 {round(int(offset) /𝟭𝟬) + 1} / {round(total /𝟭𝟬)}🔰",
                                   callback_data="pages")]
         )
     elif off_set is None:
         btn.append(
-            [InlineKeyboardButton(f"🔰𝗣𝗮𝗴𝗲 {round(int(offset) / 10) + 1} / {round(total / 10)}🔰", callback_data="pages"),
+            [InlineKeyboardButton(f"🔰𝗣𝗮𝗴𝗲 {round(int(offset) /𝟭𝟬) + 1} / {round(total /𝟭𝟬)}🔰", callback_data="pages"),
              InlineKeyboardButton("𝗡𝗲𝘅𝘁 ➡️", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
                 InlineKeyboardButton("⬅️ 𝗕𝗮𝗰𝗸", callback_data=f"next_{req}_{key}_{off_set}"),
-                InlineKeyboardButton(f"🔰𝗣𝗮𝗴𝗲 {round(int(offset) / 10) + 1} / {round(total / 10)}🔰", callback_data="pages"),
+                InlineKeyboardButton(f"🔰𝗣𝗮𝗴𝗲 {round(int(offset) /𝟭𝟬) + 1} / {round(total /𝟭𝟬)}🔰", callback_data="pages"),
                 InlineKeyboardButton("𝗡𝗲𝘅𝘁 ➡️", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
@@ -238,7 +238,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 except:
                     pass
             else:
-                await query.answer("🥴 നാണം ഉണ്ടോടോ വെല്ലോരുടെ പ്രോപ്പർട്ടിയിൽ പുടിച്ചു കുത്താൻ....", show_alert=True)
+                await query.answer("🙃 നാണം ഉണ്ടോടോ വെല്ലോരുടെ പ്രോപ്പർട്ടിയിൽ പുടിച്ചു കുത്താൻ....", show_alert=True)
     elif "groupcb" in query.data:
         await query.answer()
 
@@ -422,7 +422,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             except Exception as e:
                 await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
         else:
-            return await query.answer(f"{query.from_user.first_name}!🥴 നാണം ഉണ്ടോടോ", show_alert=True)
+            return await query.answer(f"{query.from_user.first_name}!🙃 നാണം ഉണ്ടോടോ വെല്ലോരുടെ പ്രോപ്പർട്ടിയിൽ പുടിച്ചു കുത്താൻ....", show_alert=True)
 
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
@@ -697,6 +697,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton(' 𝕄𝔸𝕃𝔸𝕐𝔸𝕃𝔸𝕄 ℍ𝔻ℝ𝕀ℙ𝕊 ℂℍ𝔸ℕℕ𝔼𝕃 'url='https://t.me/+Kjb79ja-_qJmN2E9')
             ],[
+            InlineKeyboardButton('𝔹𝔸ℂ𝕂𝕌ℙ ℂℍ𝔸ℕℕ𝔼𝕃'url='https://t.me/MALAYALIFREAKSALL')
+            ],[
             InlineKeyboardButton('🔰 𝔸𝔹𝕆𝕌𝕋 🔰', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -790,9 +792,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode='html'
         )
     elif query.data == "about":
-        buttons= [[
-            InlineKeyboardButton('ℂℝ𝔼𝔸𝕋𝕆ℝ', url='https://t.me/its_me_jupiter')
-            ],[ 
+        buttons= [[          
             InlineKeyboardButton(' 𝕄𝕆𝕍𝕀𝔼 ℝ𝔼ℚ𝕌𝔼𝕊𝕋 𝔾ℝ𝕆𝕌ℙ ', url='https://t.me/+1qzhu7BwRNI1ODk1')
             ],[                       
             InlineKeyboardButton(' 𝕌ℙ𝔻𝔸𝕋𝔼𝕊 ℂℍ𝔸ℕℕ𝔼𝕃 ',url='https://t.me/+dqquafhU0ig5YzFl')
@@ -801,7 +801,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton(' 𝕄𝔸𝕃𝔸𝕐𝔸𝕃𝔸𝕄 ℍ𝔻ℝ𝕀ℙ𝕊 ℂℍ𝔸ℕℕ𝔼𝕃 'url='https://t.me/+Kjb79ja-_qJmN2E9')
             ],[
-            InlineKeyboardButton('𝔸𝕃𝕃 ℍ𝔻ℝ𝕀ℙ𝕊 ℂℍ𝔸ℕℕ𝔼𝕃 'url='
+            InlineKeyboardButton('𝔹𝔸ℂ𝕂𝕌ℙ ℂℍ𝔸ℕℕ𝔼𝕃'url='https://t.me/MALAYALIFREAKSALL')
             ],[
             InlineKeyboardButton('🔰 𝔸𝔹𝕆𝕌𝕋 🔰', callback_data='about')                     
             InlineKeyboardButton('𝙷𝙾𝙼𝙴 ', callback_data='start'),
@@ -1287,7 +1287,7 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f"🔰𝗣𝗮𝗴𝗲 1/{round(int(total_results) / 10)}🔰", callback_data="pages"),
+            [InlineKeyboardButton(text=f"🔰𝗣𝗮𝗴𝗲 1/{round(int(total_results)/10}🔰", callback_data="pages"),
              InlineKeyboardButton(text="𝗡𝗲𝘅𝘁 ➡️", callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
@@ -1331,7 +1331,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>🎬 Title:</b> {search}\n\n<b>👥 Requested by: {message.from_user.mention}</b>\n<b>© Powered by: <a href='https://t.me/+y53tWFUw6Q43NzE9'>{message.chat.title}</a></b>\n\n<b>✍️ Note:</b> <s>This message will be Auto-deleted after 5 minutes to avoid copyright issues.</s>"
+        cap = f"<b>🎬 Title:</b> {search}\n\n<b>👥 Requested by: {message.from_user.mention}</b>\{message.chat.title}✍️ Note:</b> <s>This message will be Auto-deleted after 5 minutes...</s>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
