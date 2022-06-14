@@ -171,7 +171,7 @@ async def advantage_spoll_choker(bot, query):
     if not movies:
         return await query.answer("എവിടെ ആയിരുന്നു ഇത്രേം നേരം ലിങ്ക് പോയി ഒന്നുടെ റിക്വസ്റ്റ് ചെയ്തോ.🙃", show_alert=True)
     movie = movies[(int(movie_))]
-    await query.answer('𝙲𝙷𝙴𝙲𝙺𝙸𝙽𝙶 𝙵𝙸𝙻𝙴 𝙾𝙽 𝙼𝚈 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴...//')
+    await query.answer('𝙲𝙷𝙴𝙲𝙺𝙸𝙽𝙶 𝙵𝙸𝙻𝙴 ')
     k = await manual_filters(bot, query.message, text=movie)
     if k == False:
         files, offset, total_results = await get_search_results(movie, offset=0, filter=True)
@@ -179,7 +179,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('☹️ Movie കാണ്മാനില്ല ')
+            k = await query.message.edit('MOVIE / SERIES DOESN'T FOUND')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -238,7 +238,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 except:
                     pass
             else:
-                await query.answer("🥴 നാണം ഉണ്ടോടോ", show_alert=True)
+                await query.answer("🥴 നാണം ഉണ്ടോടോ വെല്ലോരുടെ പ്രോപ്പർട്ടിയിൽ പുടിച്ചു കുത്താൻ....", show_alert=True)
     elif "groupcb" in query.data:
         await query.answer()
 
@@ -689,10 +689,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[                        
-            InlineKeyboardButton('⚜️ 𝕄𝕆𝕍𝕀𝔼 ℝ𝔼ℚ𝕌𝔼𝕊𝕋 𝔾ℝ𝕆𝕌ℙ ⚜️', url='https://t.me/POPCORN_SCOPE_MOVIEZ')
+            InlineKeyboardButton(' 𝕄𝕆𝕍𝕀𝔼 ℝ𝔼ℚ𝕌𝔼𝕊𝕋 𝔾ℝ𝕆𝕌ℙ ', url='https://t.me/+1qzhu7BwRNI1ODk1')
             ],[                       
-            InlineKeyboardButton('⚡️ 𝕄𝔸𝕀ℕ 𝔾ℝ𝕆𝕌ℙ ⚡️', url='https://t.me/POPCORN_SCOPE')
-            ],[ 
+            InlineKeyboardButton(' 𝕌ℙ𝔻𝔸𝕋𝔼𝕊 ℂℍ𝔸ℕℕ𝔼𝕃 ',url='https://t.me/+dqquafhU0ig5YzFl')
+            ],[
+            InlineKeyboardButton(' 𝔻𝕍𝔻ℝ𝕀ℙ𝕊 ℂℍ𝔸ℕℕ𝔼𝕃 'url='https://t.me/+1T0d21PofTQ4YjQ1')
+            ],[
+            InlineKeyboardButton(' 𝕄𝔸𝕃𝔸𝕐𝔸𝕃𝔸𝕄 ℍ𝔻ℝ𝕀ℙ𝕊 ℂℍ𝔸ℕℕ𝔼𝕃 'url='https://t.me/+Kjb79ja-_qJmN2E9')
+            ],[
             InlineKeyboardButton('🔰 𝔸𝔹𝕆𝕌𝕋 🔰', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -762,7 +766,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝚂𝚃𝙸𝙲𝙺𝙴𝚁-𝙸𝙳', callback_data='sticker')
             ],[
             InlineKeyboardButton('𝙲𝙾𝚅𝙸𝙳', callback_data='corona'),
-            InlineKeyboardButton('𝙰𝚄𝙳𝙸𝙾-𝙱𝙾𝙾𝙺', callback_data='abook'),
             InlineKeyboardButton('𝚄𝚁𝙻-𝚂𝙷𝙾𝚁𝚃', callback_data='urlshort')
             ],[
             InlineKeyboardButton('𝙶-𝚃𝚁𝙰𝙽𝚂', callback_data='gtrans'),
@@ -790,14 +793,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons= [[
             InlineKeyboardButton('ℂℝ𝔼𝔸𝕋𝕆ℝ', url='https://t.me/its_me_jupiter')
             ],[ 
-            InlineKeyboardButton('𝕄𝕆𝕍𝕀𝔼 ℝ𝔼ℚ𝕌𝔼𝕊𝕋 𝔾ℝ𝕆𝕌ℙ', url='https://t.me/POPCORN_SCOPE_MOVIEZ')
-            ],[            
-            InlineKeyboardButton('𝕄𝔸𝕀ℕ 𝔾ℝ𝕆𝕌ℙ', url='https://t.me/POPCORN_SCOPE')
+            InlineKeyboardButton(' 𝕄𝕆𝕍𝕀𝔼 ℝ𝔼ℚ𝕌𝔼𝕊𝕋 𝔾ℝ𝕆𝕌ℙ ', url='https://t.me/+1qzhu7BwRNI1ODk1')
+            ],[                       
+            InlineKeyboardButton(' 𝕌ℙ𝔻𝔸𝕋𝔼𝕊 ℂℍ𝔸ℕℕ𝔼𝕃 ',url='https://t.me/+dqquafhU0ig5YzFl')
             ],[
-            InlineKeyboardButton('𝕊𝕆𝕌ℝℂ𝔼 ℂ𝕆𝔻𝔼', url='https://t.me/nokki_irunno_ippo_kittum')             
-            ],[                            
-            InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 ', callback_data='start'),
-            InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 ', callback_data='close_data')
+            InlineKeyboardButton(' 𝔻𝕍𝔻ℝ𝕀ℙ𝕊 ℂℍ𝔸ℕℕ𝔼𝕃 'url='https://t.me/+1T0d21PofTQ4YjQ1')
+            ],[
+            InlineKeyboardButton(' 𝕄𝔸𝕃𝔸𝕐𝔸𝕃𝔸𝕄 ℍ𝔻ℝ𝕀ℙ𝕊 ℂℍ𝔸ℕℕ𝔼𝕃 'url='https://t.me/+Kjb79ja-_qJmN2E9')
+            ],[
+            InlineKeyboardButton('𝔸𝕃𝕃 ℍ𝔻ℝ𝕀ℙ𝕊 ℂℍ𝔸ℕℕ𝔼𝕃 'url='
+            ],[
+            InlineKeyboardButton('🔰 𝔸𝔹𝕆𝕌𝕋 🔰', callback_data='about')                     
+            InlineKeyboardButton('𝙷𝙾𝙼𝙴 ', callback_data='start'),
+            InlineKeyboardButton(' 𝙲𝙻𝙾𝚂𝙴 ', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
