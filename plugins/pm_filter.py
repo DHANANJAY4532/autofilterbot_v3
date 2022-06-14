@@ -136,18 +136,18 @@ async def next_page(bot, query):
     if n_offset == 0:
         btn.append(
             [InlineKeyboardButton("⬅️ 𝗕𝗮𝗰𝗸", callback_data=f"next_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f"🔰𝗣𝗮𝗴𝗲 {round(int(offset) /10) + 1} / {round(total /𝟭𝟬)}🔰",
+             InlineKeyboardButton(f"🔰𝗣𝗮𝗴𝗲 {round(int(offset) /10) + 1} / {round(total /10)}🔰",
                                   callback_data="pages")]
         )
     elif off_set is None:
         btn.append(
-            [InlineKeyboardButton(f"🔰𝗣𝗮𝗴𝗲 {round(int(offset) /10 + 1} / {round(total /𝟭𝟬)}🔰", callback_data="pages"),
+            [InlineKeyboardButton(f"🔰𝗣𝗮𝗴𝗲 {round(int(offset) /10 + 1} / {round(total /10)}🔰", callback_data="pages"),
              InlineKeyboardButton("𝗡𝗲𝘅𝘁 ➡️", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
                 InlineKeyboardButton("⬅️ 𝗕𝗮𝗰𝗸", callback_data=f"next_{req}_{key}_{off_set}"),
-                InlineKeyboardButton(f"🔰𝗣𝗮𝗴𝗲 {round(int(offset) /10 + 1} / {round(total /𝟭𝟬)}🔰", callback_data="pages"),
+                InlineKeyboardButton(f"🔰𝗣𝗮𝗴𝗲 {round(int(offset) /10 + 1} / {round(total /10)}🔰", callback_data="pages"),
                 InlineKeyboardButton("𝗡𝗲𝘅𝘁 ➡️", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
@@ -179,7 +179,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('MOVIE / SERIES DOESNT FOUND')
+            k = await query.message.edit('❌️ 𝗠𝗢𝗩𝗜𝗘 / 𝗦𝗘𝗥𝗜𝗘𝗦 𝗗𝗢𝗘𝗦𝗡𝗧 𝗙𝗢𝗨𝗡𝗗 ❌️')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -688,10 +688,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "pages":
         await query.answer()
     elif query.data == "start":
-        buttons = [[ 
-            InlineKeyboardButton('𝔹𝔸ℂ𝕂𝕌ℙ ℂℍ𝔸ℕℕ𝔼𝕃'url='https://t.me/MALAYALIFREAKSALL')
+        buttons = [[
+            InlineKeyboardButton('𝗙𝗘𝗘𝗗𝗕𝗔𝗖𝗞 𝗕𝗢𝗧'url='http://t.me/malayali_freaks_feedback_bot')
+            ],[ 
+            InlineKeyboardButton('𝗕𝗔𝗖𝗞𝗨𝗣 𝗖𝗛𝗔𝗡𝗡𝗘𝗟'url='https://t.me/MALAYALIFREAKSALL')
             ],[
-            InlineKeyboardButton('🔰 𝔸𝔹𝕆𝕌𝕋 🔰', callback_data='about')
+            InlineKeyboardButton('🔰 𝗔𝗕𝗢𝗨𝗧 🔰', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
