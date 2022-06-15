@@ -689,9 +689,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('𝗙𝗘𝗘𝗗𝗕𝗔𝗖𝗞 𝗕𝗢𝗧', url='http://t.me/malayali_freaks_feedback_bot')
-            ],[ 
-            InlineKeyboardButton('𝗕𝗔𝗖𝗞𝗨𝗣 𝗖𝗛𝗔𝗡𝗡𝗘𝗟', url='https://t.me/MALAYALIFREAKSALL')
+            InlineKeyboardButton(' 𝕄𝕆𝕍𝕀𝔼 ℝ𝔼ℚ𝕌𝔼𝕊𝕋 𝔾ℝ𝕆𝕌ℙ ', url='https://t.me/+1qzhu7BwRNI1ODk1')
+            ],[                       
+            InlineKeyboardButton(' 𝕌ℙ𝔻𝔸𝕋𝔼𝕊 ℂℍ𝔸ℕℕ𝔼𝕃 ', url='https://t.me/+dqquafhU0ig5YzFl')
+            ],[
+            InlineKeyboardButton(' 𝔻𝕍𝔻ℝ𝕀ℙ𝕊 ℂℍ𝔸ℕℕ𝔼𝕃 ', url='https://t.me/+1T0d21PofTQ4YjQ1')
+            ],[
+            InlineKeyboardButton('𝔸𝕃𝕃 𝕃𝔸ℕ𝔾𝕌𝔸𝔾𝔼 ℍ𝔻ℝ𝕀ℙ𝕊', url='https://t.me/+hXSEiAH1MWMyZWZl')
+            ],[
+            InlineKeyboardButton(' 𝕄𝔸𝕃𝔸𝕐𝔸𝕃𝔸𝕄 ℍ𝔻ℝ𝕀ℙ𝕊 ℂℍ𝔸ℕℕ𝔼𝕃 ', url='https://t.me/+Kjb79ja-_qJmN2E9')
             ],[
             InlineKeyboardButton('🔰 𝗔𝗕𝗢𝗨𝗧 🔰', callback_data='about')
         ]]
@@ -787,17 +793,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[          
-            InlineKeyboardButton(' 𝕄𝕆𝕍𝕀𝔼 ℝ𝔼ℚ𝕌𝔼𝕊𝕋 𝔾ℝ𝕆𝕌ℙ ', url='https://t.me/+1qzhu7BwRNI1ODk1')
-            ],[                       
-            InlineKeyboardButton(' 𝕌ℙ𝔻𝔸𝕋𝔼𝕊 ℂℍ𝔸ℕℕ𝔼𝕃 ', url='https://t.me/+dqquafhU0ig5YzFl')
-            ],[
-            InlineKeyboardButton(' 𝔻𝕍𝔻ℝ𝕀ℙ𝕊 ℂℍ𝔸ℕℕ𝔼𝕃 ', url='https://t.me/+1T0d21PofTQ4YjQ1')
-            ],[
-            InlineKeyboardButton('𝔸𝕃𝕃 𝕃𝔸ℕ𝔾𝕌𝔸𝔾𝔼 ℍ𝔻ℝ𝕀ℙ𝕊', url='https://t.me/+hXSEiAH1MWMyZWZl')
-            ],[
-            InlineKeyboardButton(' 𝕄𝔸𝕃𝔸𝕐𝔸𝕃𝔸𝕄 ℍ𝔻ℝ𝕀ℙ𝕊 ℂℍ𝔸ℕℕ𝔼𝕃 ', url='https://t.me/+Kjb79ja-_qJmN2E9')
-            ],[
-            InlineKeyboardButton('🔰 𝔸𝔹𝕆𝕌𝕋 🔰', callback_data='about'),                   
+            InlineKeyboardButton('𝗙𝗘𝗘𝗗𝗕𝗔𝗖𝗞 𝗕𝗢𝗧', url='http://t.me/malayali_freaks_feedback_bot')
+            ],[ 
+            InlineKeyboardButton('𝗕𝗔𝗖𝗞𝗨𝗣 𝗖𝗛𝗔𝗡𝗡𝗘𝗟', url='https://t.me/MALAYALIFREAKSALL')
+            ],[                 
             InlineKeyboardButton('𝙷𝙾𝙼𝙴 ', callback_data='start'),
             InlineKeyboardButton(' 𝙲𝙻𝙾𝚂𝙴 ', callback_data='close_data')
         ]]
