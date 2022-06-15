@@ -76,7 +76,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "𝗕𝗔𝗖𝗞𝗨𝗣 𝗖𝗛𝗔𝗡𝗡𝗘𝗟', url=invite_link.invite_link
+                    "𝗕𝗔𝗖𝗞𝗨𝗣 𝗖𝗛𝗔𝗡𝗡𝗘𝗟", url=invite_link.invite_link
                 )
             ]
         ]
