@@ -87,16 +87,12 @@ async def showid(client, message):
 @Client.on_message(filters.command("about"))
 async def aboutme(client, message):
         buttons= [[
-            InlineKeyboardButton('ℂℝ𝔼𝔸𝕋𝕆ℝ', url='https://t.me/its_me_jupiter')
+            InlineKeyboardButton('𝗙𝗘𝗘𝗗𝗕𝗔𝗖𝗞 𝗕𝗢𝗧', url='http://t.me/malayali_freaks_feedback_bot')
             ],[ 
-            InlineKeyboardButton('𝕄𝕆𝕍𝕀𝔼 ℝ𝔼ℚ𝕌𝔼𝕊𝕋 𝔾ℝ𝕆𝕌ℙ', url='https://t.me/POPCORN_SCOPE_MOVIEZ')
-            ],[            
-            InlineKeyboardButton('𝕄𝔸𝕀ℕ 𝔾ℝ𝕆𝕌ℙ', url='https://t.me/POPCORN_SCOPE')
-            ],[
-            InlineKeyboardButton('𝕊𝕆𝕌ℝℂ𝔼 ℂ𝕆𝔻𝔼', url='https://github.com/MrMKN/PROFESSOR-BOT')             
+            InlineKeyboardButton('𝗕𝗔𝗖𝗞𝗨𝗣 𝗖𝗛𝗔𝗡𝗡𝗘𝗟', url='https://t.me/MALAYALIFREAKSALL')
             ],[                            
-            InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 ', callback_data='start'),
-            InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 ', callback_data='close_data')
+            InlineKeyboardButton(' 𝙷𝙾𝙼𝙴 ', callback_data='start'),
+            InlineKeyboardButton(' 𝙲𝙻𝙾𝚂𝙴 ', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -153,7 +149,7 @@ async def who_is(client, message):
             message=chat_photo.big_file_id
         )
         buttons = [[
-            InlineKeyboardButton('🔐 Close', callback_data='close_data')
+            InlineKeyboardButton(' Close', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -167,7 +163,7 @@ async def who_is(client, message):
         os.remove(local_user_photo)
     else:
         buttons = [[
-            InlineKeyboardButton('🔐 Close', callback_data='close_data')
+            InlineKeyboardButton(' Close', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_text(
