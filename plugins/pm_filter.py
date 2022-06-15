@@ -797,7 +797,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton(' 𝕄𝔸𝕃𝔸𝕐𝔸𝕃𝔸𝕄 ℍ𝔻ℝ𝕀ℙ𝕊 ℂℍ𝔸ℕℕ𝔼𝕃 ', url='https://t.me/+Kjb79ja-_qJmN2E9')
             ],[
-            InlineKeyboardButton('🔰 𝔸𝔹𝕆𝕌𝕋 🔰', callback_data='about')                     
+            InlineKeyboardButton('🔰 𝔸𝔹𝕆𝕌𝕋 🔰', callback_data='about'),                   
             InlineKeyboardButton('𝙷𝙾𝙼𝙴 ', callback_data='start'),
             InlineKeyboardButton(' 𝙲𝙻𝙾𝚂𝙴 ', callback_data='close_data')
         ]]
