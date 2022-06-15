@@ -22,9 +22,8 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
-            [
-                InlineKeyboardButton('⚜️ 𝕄𝕆𝕍𝕀𝔼 ℝ𝔼ℚ𝕌𝔼𝕊𝕋 𝔾ℝ𝕆𝕌ℙ ⚜️', url='https://t.me/POPCORN_SCOPE_MOVIEZ')
-            ],
+            [ 
+            InlineKeyboardButton('𝗕𝗔𝗖𝗞𝗨𝗣 𝗖𝗛𝗔𝗡𝗡𝗘𝗟', url='https://t.me/MALAYALIFREAKSALL')
             [
                 InlineKeyboardButton('ℍ𝔼𝕃ℙ', url=f"https://t.me/{temp.U_NAME}?start=help")
             ]
@@ -76,7 +75,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "⚜️ 𝕄𝕆𝕍𝕀𝔼 ℝ𝔼ℚ𝕌𝔼𝕊𝕋 𝔾ℝ𝕆𝕌ℙ ⚜️", url=invite_link.invite_link
+                    "𝗕𝗔𝗖𝗞𝗨𝗣 𝗖𝗛𝗔𝗡𝗡𝗘𝗟', url=invite_link.invite_link
                 )
             ]
         ]
