@@ -85,7 +85,7 @@ async def give_filter(client, message):
 async def next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-        return await query.answer("♻️സ്വന്തമായി റിക്വസ്റ്റ് ചെയ്യൂ.♻️", show_alert=True)
+        return await query.answer("🙃 നാണം ഉണ്ടോടോ വെല്ലോരുടെ പ്രോപ്പർട്ടിയിൽ പുടിച്ചു കുത്താൻ....", show_alert=True)
     try:
         offset = int(offset)
     except:
@@ -136,18 +136,18 @@ async def next_page(bot, query):
     if n_offset == 0:
         btn.append(
             [InlineKeyboardButton("⬅️ 𝗕𝗮𝗰𝗸", callback_data=f"next_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f"📄 𝗣𝗮𝗴𝗲 {round(int(offset) / 10) + 1} / {round(total / 10)}",
+             InlineKeyboardButton(f"🔰𝗣𝗮𝗴𝗲 {round(int(offset) / 10) + 1} / {round(total / 10)}🔰",
                                   callback_data="pages")]
         )
     elif off_set is None:
         btn.append(
-            [InlineKeyboardButton(f"📄 𝗣𝗮𝗴𝗲 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
+            [InlineKeyboardButton(f"🔰𝗣𝗮𝗴𝗲 {round(int(offset) / 10) + 1} / {round(total / 10)}🔰", callback_data="pages"),
              InlineKeyboardButton("𝗡𝗲𝘅𝘁 ➡️", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
                 InlineKeyboardButton("⬅️ 𝗕𝗮𝗰𝗸", callback_data=f"next_{req}_{key}_{off_set}"),
-                InlineKeyboardButton(f"📄 𝗣𝗮𝗴𝗲 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
+                InlineKeyboardButton(f"🔰𝗣𝗮𝗴𝗲 {round(int(offset) / 10) + 1} / {round(total / 10)}🔰", callback_data="pages"),
                 InlineKeyboardButton("𝗡𝗲𝘅𝘁 ➡️", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
@@ -164,7 +164,7 @@ async def next_page(bot, query):
 async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
     if int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer("♻️സ്വന്തമായി റിക്വസ്റ്റ് ചെയ്യൂ.♻️", show_alert=True)
+        return await query.answer("🙃 നാണം ഉണ്ടോടോ വെല്ലോരുടെ പ്രോപ്പർട്ടിയിൽ പുടിച്ചു കുത്താൻ....", show_alert=True)
     if movie_ == "close_spellcheck":
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.message_id)
