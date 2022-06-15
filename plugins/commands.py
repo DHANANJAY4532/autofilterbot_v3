@@ -24,6 +24,7 @@ async def start(client, message):
         buttons = [
             [ 
             InlineKeyboardButton('𝗕𝗔𝗖𝗞𝗨𝗣 𝗖𝗛𝗔𝗡𝗡𝗘𝗟', url='https://t.me/MALAYALIFREAKSALL')
+            ],
             [
                 InlineKeyboardButton('ℍ𝔼𝕃ℙ', url=f"https://t.me/{temp.U_NAME}?start=help")
             ]
@@ -81,10 +82,10 @@ async def start(client, message):
         ]
 
         if message.command[1] != "subscribe":
-            btn.append([InlineKeyboardButton("🔁 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧 🔁", callback_data=f"checksub#{message.command[1]}")])
+            btn.append([InlineKeyboardButton(" 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧 ", callback_data=f"checksub#{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**𝑱𝑶𝑰𝑵 𝑶𝑼𝑹 𝑴𝑶𝑽𝑰𝑬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 𝑻𝑶 𝑼𝑺𝑬 𝑻𝑯𝑰𝑺 𝑩𝑶𝑻!**",
+            text="**𝑱𝑶𝑰𝑵 𝑩𝑨𝑪𝑲𝑼𝑷 𝑪𝑯𝑨𝑵𝑵𝑬𝑳 𝑻𝑶 𝑼𝑺𝑬 𝑴𝑬!**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
