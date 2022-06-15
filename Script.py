@@ -1,6 +1,6 @@
 class script(object):
     START_TXT = """👋 𝙷𝙴𝙻𝙾 {},
-𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>,\n im manager of malayali freaks 🙂"""
+𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>,\n  IM MANAGER OF "MALAYALI FREAKS" 🙂"""
     HELP_TXT = """𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙷𝙴𝙻𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
     ABOUT_TXT = """ㅤ """
     SOURCE_TXT = """<b>NOKKI IRUNNO IPPO KITTUM"""
