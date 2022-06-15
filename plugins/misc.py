@@ -313,7 +313,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('𝕆𝕎ℕ𝔼ℝ', url='https://t.me/its_me_jupiter')
+                InlineKeyboardButton('𝗙𝗘𝗘𝗗𝗕𝗔𝗖𝗞 𝗕𝗢𝗧', url='http://t.me/malayali_freaks_feedback_bot')
             ],
             [
                 InlineKeyboardButton('Help', url=f"https://t.me/{temp.U_NAME}?start=help")
