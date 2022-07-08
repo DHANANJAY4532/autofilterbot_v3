@@ -685,8 +685,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await removebg_plain(client, query.message)
     elif query.data == "rmbgsticker":
         await removebg_sticker(client, query.message)
+
+#------ BUTTON ALERT ------
+
     elif query.data == "pages":
-        await query.answer()
+        await query.answer("കൗതുകം ലേഷം കൂടുതൽ ആണല്ലേ👀")
+
+    elif query.data == "alert1":
+        await query.answer("നിനക്ക് വേണ്ട text")  # eg - callback_data='alert1'👈see this
+
+    elif query.data == "alert2":
+        await query.answer("നിനക്ക് വേണ്ട text")
+
+#---------BUTTON ALERT--------
+
     elif query.data == "start":
         buttons = [[
             InlineKeyboardButton(' 𝕄𝕆𝕍𝕀𝔼 ℝ𝔼ℚ𝕌𝔼𝕊𝕋 𝔾ℝ𝕆𝕌ℙ ', url='https://t.me/+z8iuL9kThWViNjll')
