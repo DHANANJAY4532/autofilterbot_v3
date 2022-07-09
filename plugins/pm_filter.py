@@ -800,7 +800,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[ 
             InlineKeyboardButton('𝗕𝗔𝗖𝗞𝗨𝗣 𝗖𝗛𝗔𝗡𝗡𝗘𝗟', url='https://t.me/MALAYALIFREAKSALL')
             ],[
-            InlineKeyboardButton('𝙎𝙊𝙐𝙍𝘾𝙀 𝘾𝙊𝘿𝙀', url='https://t.me/MALAYALIFREAKSALL')
+            InlineKeyboardButton('𝙎𝙊𝙐𝙍𝘾𝙀 𝘾𝙊𝘿𝙀', url='https://github.com/EvamariaTG/EvaMaria')
             ],[                 
             InlineKeyboardButton('𝙷𝙾𝙼𝙴 ', callback_data='start'),
             InlineKeyboardButton(' 𝙲𝙻𝙾𝚂𝙴 ', callback_data='close_data')
