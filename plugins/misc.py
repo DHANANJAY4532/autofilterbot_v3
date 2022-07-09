@@ -90,7 +90,9 @@ async def aboutme(client, message):
             InlineKeyboardButton('𝗙𝗘𝗘𝗗𝗕𝗔𝗖𝗞 𝗕𝗢𝗧', url='http://t.me/malayali_freaks_feedback_bot')
             ],[ 
             InlineKeyboardButton('𝗕𝗔𝗖𝗞𝗨𝗣 𝗖𝗛𝗔𝗡𝗡𝗘𝗟', url='https://t.me/MALAYALIFREAKSALL')
-            ],[                            
+            ],[   
+            InlineKeyboardButton('𝙎𝙊𝙐𝙍𝘾𝙀 𝘾𝙊𝘿𝙀', url='https://github.com/EvamariaTG/EvaMaria')  
+            ],[                     
             InlineKeyboardButton(' 𝙷𝙾𝙼𝙴 ', callback_data='start'),
             InlineKeyboardButton(' 𝙲𝙻𝙾𝚂𝙴 ', callback_data='close_data')
         ]]
@@ -332,21 +334,15 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, message.from_user.username, temp.U_NAME))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton(' 𝕄𝕆𝕍𝕀𝔼 ℝ𝔼ℚ𝕌𝔼𝕊𝕋 𝔾ℝ𝕆𝕌ℙ ', url='https://t.me/+1qzhu7BwRNI1ODk1')
+            InlineKeyboardButton(' 𝕄𝕆𝕍𝕀𝔼 ℝ𝔼ℚ𝕌𝔼𝕊𝕋 𝔾ℝ𝕆𝕌ℙ ', url='https://t.me/+z8iuL9kThWViNjll')
             ],[                       
             InlineKeyboardButton(' 𝕌ℙ𝔻𝔸𝕋𝔼𝕊 ℂℍ𝔸ℕℕ𝔼𝕃 ', url='https://t.me/+dqquafhU0ig5YzFl')
-            ],[
-            InlineKeyboardButton(' 𝔻𝕍𝔻ℝ𝕀ℙ𝕊 ℂℍ𝔸ℕℕ𝔼𝕃 ', url='https://t.me/+1T0d21PofTQ4YjQ1')
-            ],[
-            InlineKeyboardButton('𝔸𝕃𝕃 𝕃𝔸ℕ𝔾𝕌𝔸𝔾𝔼 ℍ𝔻ℝ𝕀ℙ𝕊', url='https://t.me/+hXSEiAH1MWMyZWZl')
-            ],[
-            InlineKeyboardButton(' 𝕄𝔸𝕃𝔸𝕐𝔸𝕃𝔸𝕄 ℍ𝔻ℝ𝕀ℙ𝕊 ℂℍ𝔸ℕℕ𝔼𝕃 ', url='https://t.me/+Kjb79ja-_qJmN2E9')
             ],[
             InlineKeyboardButton('🔰 𝔸𝔹𝕆𝕌𝕋 🔰', callback_data='about')
         ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action("Typing")
-        m=await message.reply_sticker("CAACAgUAAxkBAAIHamKLIn6fmhV8mWhDUjxHW7Bxkjy1AAKaAAPIlGQULGXh4VzvJWoeBA") 
+        m=await message.reply_sticker("CAACAgUAAxkDAAInWmLI-sB8VlgWwAManvzyIkv5LU7TAALzBQAC9MZJVppl1Y6lA9l5HgQ") 
         await asyncio.sleep(1)
         await m.delete()        
         await message.reply_photo(
@@ -381,21 +377,15 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton(' 𝕄𝕆𝕍𝕀𝔼 ℝ𝔼ℚ𝕌𝔼𝕊𝕋 𝔾ℝ𝕆𝕌ℙ ', url='https://t.me/+1qzhu7BwRNI1ODk1')
+            InlineKeyboardButton(' 𝕄𝕆𝕍𝕀𝔼 ℝ𝔼ℚ𝕌𝔼𝕊𝕋 𝔾ℝ𝕆𝕌ℙ ', url='https://t.me/+z8iuL9kThWViNjll')
             ],[                       
             InlineKeyboardButton(' 𝕌ℙ𝔻𝔸𝕋𝔼𝕊 ℂℍ𝔸ℕℕ𝔼𝕃 ', url='https://t.me/+dqquafhU0ig5YzFl')
-            ],[
-            InlineKeyboardButton(' 𝔻𝕍𝔻ℝ𝕀ℙ𝕊 ℂℍ𝔸ℕℕ𝔼𝕃 ', url='https://t.me/+1T0d21PofTQ4YjQ1')
-            ],[
-            InlineKeyboardButton('𝔸𝕃𝕃 𝕃𝔸ℕ𝔾𝕌𝔸𝔾𝔼 ℍ𝔻ℝ𝕀ℙ𝕊', url='https://t.me/+hXSEiAH1MWMyZWZl')
-            ],[
-            InlineKeyboardButton(' 𝕄𝔸𝕃𝔸𝕐𝔸𝕃𝔸𝕄 ℍ𝔻ℝ𝕀ℙ𝕊 ℂℍ𝔸ℕℕ𝔼𝕃 ', url='https://t.me/+Kjb79ja-_qJmN2E9')
             ],[
             InlineKeyboardButton('🔰 𝔸𝔹𝕆𝕌𝕋 🔰', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action("Typing")
-        m=await message.reply_sticker("CAACAgUAAxkBAAIHamKLIn6fmhV8mWhDUjxHW7Bxkjy1AAKaAAPIlGQULGXh4VzvJWoeBA") 
+        m=await message.reply_sticker("CAACAgUAAxkDAAInWmLI-sB8VlgWwAManvzyIkv5LU7TAALzBQAC9MZJVppl1Y6lA9l5HgQ") 
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_photo(
